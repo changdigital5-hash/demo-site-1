@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about The Beach House — Port Dover's beloved waterfront restaurant on Lake Erie. Discover our story, culinary philosophy, hours, and location.">
+  <title>About Us | The Beach House — Port Dover Waterfront Dining</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">BH</div>
+        <span class="logo-text">The Beach House</span>
+      </a>
+      <nav class="nav" id="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <div class="nav-item">
+          <a href="menu.html" class="nav-link nav-dropdown-toggle">
+            Menu <span class="chevron">▼</span>
+          </a>
+          <div class="dropdown-menu">
+            <a href="menu.html#appetizers" class="dropdown-link"><span class="dropdown-icon">🦐</span> Appetizers</a>
+            <a href="menu.html#mains" class="dropdown-link"><span class="dropdown-icon">🐟</span> Main Courses</a>
+            <a href="menu.html#desserts" class="dropdown-link"><span class="dropdown-icon">🍰</span> Desserts</a>
+            <a href="menu.html#drinks" class="dropdown-link"><span class="dropdown-icon">🍷</span> Drinks</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="about.html" class="nav-link nav-dropdown-toggle active">
+            About <span class="chevron">▼</span>
+          </a>
+          <div class="dropdown-menu">
+            <a href="about.html" class="dropdown-link"><span class="dropdown-icon">📖</span> Our Story</a>
+            <a href="about.html#hours" class="dropdown-link"><span class="dropdown-icon">🕐</span> Hours &amp; Location</a>
+            <a href="faq.html" class="dropdown-link"><span class="dropdown-icon">❓</span> FAQ</a>
+          </div>
+        </div>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-cta">
+        <a href="tel:+15195830880" class="header-phone">
+          <span class="phone-icon">📞</span> (519) 583-0880
+        </a>
+      </div>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+
+  <!-- ========== PAGE HERO ========== -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-separator">›</span>
+        <span class="breadcrumb-current">About</span>
+      </nav>
+      <h1 class="page-hero-title animate-on-scroll">About Us</h1>
+      <p class="page-hero-subtitle animate-on-scroll">Discover the story behind Port Dover's beloved waterfront restaurant.</p>
+    </div>
+  </section>
+
+  <!-- ========== OUR STORY SECTION ========== -->
+  <section class="about-section" id="our-story">
+    <div class="container">
+
+      <!-- First Block: Image Left, Text Right -->
+      <div class="about-story-grid animate-on-scroll">
+        <div class="about-story-image">
+          <img src="images/about.png" alt="The Beach House restaurant exterior on Lake Erie waterfront" loading="lazy">
+        </div>
+        <div class="about-story-content">
+          <span class="section-label">OUR STORY</span>
+          <h2 class="section-title">From Humble Beginnings to Lakeside Legend</h2>
+          <p>Nestled on the picturesque shores of Lake Erie, The Beach House began as a small seaside eatery in the heart of Port Dover, Ontario. What started as a simple fish and chips shack — serving golden-fried Lake Erie perch to locals and summer visitors — quickly became a beloved gathering place for the entire community.</p>
+          <p>Over the years, our passion for fresh, locally sourced ingredients and our commitment to warm, genuine hospitality transformed that modest shack into the waterfront dining destination it is today. The stunning lake views that frame every meal, the sound of waves lapping against the shore, and the unforgettable sunsets over the water — these are the things that keep our guests coming back, season after season.</p>
+          <p>Today, The Beach House stands as a testament to the power of great food, beautiful surroundings, and the kind of heartfelt service that makes every guest feel like family.</p>
+        </div>
+      </div>
+
+      <!-- Second Block: Text Left, Image Right (Reverse) -->
+      <div class="about-story-grid reverse animate-on-scroll">
+        <div class="about-story-image">
+          <img src="images/food.png" alt="Fresh dishes prepared at The Beach House kitchen" loading="lazy">
+        </div>
+        <div class="about-story-content">
+          <span class="section-label">OUR KITCHEN</span>
+          <h2 class="section-title">Fresh, Local, Unforgettable</h2>
+          <p>At The Beach House, our culinary philosophy is simple: let the ingredients shine. We source the freshest Lake Erie perch and pickerel directly from local fishermen, ensuring every fillet that reaches your plate is as fresh as the lake breeze. Our partnerships with Ontario farms mean that our seasonal produce is always at peak flavor and quality.</p>
+          <p>Our talented kitchen team takes pride in crafting menus that celebrate the bounty of the region. From classic lakeside favorites to innovative seasonal specials, every dish is prepared with meticulous attention to detail and an unwavering dedication to quality. We believe that great food doesn't need to be complicated — it just needs to be made with the best ingredients and a whole lot of heart.</p>
+          <p>Whether you're savoring our signature perch platter or indulging in a seasonal creation, you'll taste the difference that fresh, local sourcing makes in every single bite.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== VALUES SECTION ========== -->
+  <section class="values-section">
+    <div class="container">
+      <h2 class="section-title text-center animate-on-scroll">What We Stand For</h2>
+      <div class="values-grid">
+
+        <div class="value-card animate-on-scroll">
+          <div class="value-icon">🌿</div>
+          <h3 class="value-title">Fresh Ingredients</h3>
+          <p class="value-description">We source the freshest seafood and produce from local suppliers and Lake Erie fishermen.</p>
+        </div>
+
+        <div class="value-card animate-on-scroll">
+          <div class="value-icon">❤️</div>
+          <h3 class="value-title">Warm Hospitality</h3>
+          <p class="value-description">Every guest is family. We create memorable dining experiences with genuine care and attention.</p>
+        </div>
+
+        <div class="value-card animate-on-scroll">
+          <div class="value-icon">🌊</div>
+          <h3 class="value-title">Lakeside Charm</h3>
+          <p class="value-description">Our waterfront setting on Lake Erie provides the perfect backdrop for any occasion.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HOURS & LOCATION SECTION ========== -->
+  <section class="hours-section" id="hours">
+    <div class="container">
+      <h2 class="section-title text-center animate-on-scroll">Hours &amp; Location</h2>
+      <div class="hours-grid">
+
+        <!-- Left: Opening Hours -->
+        <div class="hours-table-wrapper animate-on-scroll">
+          <h3>Opening Hours</h3>
+          <table class="hours-table">
+            <tbody>
+              <tr data-day="sunday">
+                <td>Sunday</td>
+                <td>11 a.m.–8:30 p.m.</td>
+              </tr>
+              <tr data-day="monday">
+                <td>Monday</td>
+                <td>11 a.m.–8:30 p.m.</td>
+              </tr>
+              <tr data-day="tuesday">
+                <td>Tuesday</td>
+                <td>11 a.m.–8:30 p.m.</td>
+              </tr>
+              <tr data-day="wednesday">
+                <td>Wednesday</td>
+                <td>11 a.m.–8:30 p.m.</td>
+              </tr>
+              <tr data-day="thursday">
+                <td>Thursday</td>
+                <td>11 a.m.–8:30 p.m.</td>
+              </tr>
+              <tr data-day="friday">
+                <td>Friday</td>
+                <td>11 a.m.–9 p.m.</td>
+              </tr>
+              <tr data-day="saturday">
+                <td>Saturday</td>
+                <td>11 a.m.–9 p.m.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Right: Map & Location Details -->
+        <div class="location-card animate-on-scroll">
+          <div class="map-embed">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2930.9!2d-80.2031!3d42.7867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c6d8a9c8c8c8d%3A0x0!2zNDLCsDQ3JzEyLjEiTiA4MMKwMTInMTEuMiJX!5e0!3m2!1sen!2sca!4v1234567890"
+              width="100%"
+              height="300"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="The Beach House location on Google Maps">
+            </iframe>
+          </div>
+          <div class="location-details">
+            <div class="location-detail-item">
+              <span class="location-detail-icon">📍</span>
+              <span>2 Walker St, Port Dover, ON N0A 1N0</span>
+            </div>
+            <div class="location-detail-item">
+              <span class="location-detail-icon">📞</span>
+              <a href="tel:+15195830880">(519) 583-0880</a>
+            </div>
+            <div class="location-detail-item">
+              <span class="location-detail-icon">✉️</span>
+              <a href="mailto:info@thebeachhouseportdover.ca">info@thebeachhouseportdover.ca</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA SECTION ========== -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content animate-on-scroll">
+        <h2 class="cta-title">Come Visit Us Today</h2>
+        <p class="cta-text">We'd love to welcome you to The Beach House for an unforgettable waterfront dining experience on the shores of Lake Erie. Whether it's a casual lunch, a family dinner, or a special celebration — your table is waiting.</p>
+        <div class="cta-buttons">
+          <a href="https://www.google.com/maps/dir//2+Walker+St,+Port+Dover,+ON+N0A+1N0" target="_blank" rel="noopener noreferrer" class="btn btn-white">Get Directions</a>
+          <a href="tel:+15195830880" class="btn btn-outline-white">Call Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-text">The Beach House</span>
+          </a>
+          <p>A waterfront dining experience on the shores of Lake Erie. Fresh seafood, stunning views, and unforgettable moments in Port Dover, Ontario.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Facebook">f</a>
+            <a href="#" class="social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Hours</h4>
+          <ul class="footer-links">
+            <li>Sun–Thu: 11am–8:30pm</li>
+            <li>Fri–Sat: 11am–9pm</li>
+          </ul>
+          <h4 class="footer-heading" style="margin-top:1.5rem;">Price Range</h4>
+          <ul class="footer-links">
+            <li>$20–30 per person</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Contact Us</h4>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📍</span>
+            <span>2 Walker St,<br>Port Dover, ON N0A 1N0</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📞</span>
+            <a href="tel:+15195830880">(519) 583-0880</a>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">✉️</span>
+            <a href="mailto:info@thebeachhouseportdover.ca">info@thebeachhouseportdover.ca</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 The Beach House. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

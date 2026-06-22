@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ | The Beach House – Port Dover Waterfront Dining</title>
+  <meta name="description" content="Find answers to frequently asked questions about dining at The Beach House in Port Dover. Learn about reservations, hours, menu options, events, and more.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">BH</div>
+        <span class="logo-text">The Beach House</span>
+      </a>
+      <nav class="nav" id="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <div class="nav-item">
+          <a href="menu.html" class="nav-link nav-dropdown-toggle">
+            Menu <span class="chevron">▼</span>
+          </a>
+          <div class="dropdown-menu">
+            <a href="menu.html#appetizers" class="dropdown-link"><span class="dropdown-icon">🦐</span> Appetizers</a>
+            <a href="menu.html#mains" class="dropdown-link"><span class="dropdown-icon">🐟</span> Main Courses</a>
+            <a href="menu.html#desserts" class="dropdown-link"><span class="dropdown-icon">🍰</span> Desserts</a>
+            <a href="menu.html#drinks" class="dropdown-link"><span class="dropdown-icon">🍷</span> Drinks</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="about.html" class="nav-link nav-dropdown-toggle">
+            About <span class="chevron">▼</span>
+          </a>
+          <div class="dropdown-menu">
+            <a href="about.html" class="dropdown-link"><span class="dropdown-icon">📖</span> Our Story</a>
+            <a href="about.html#hours" class="dropdown-link"><span class="dropdown-icon">🕐</span> Hours &amp; Location</a>
+            <a href="faq.html" class="dropdown-link"><span class="dropdown-icon">❓</span> FAQ</a>
+          </div>
+        </div>
+        <a href="faq.html" class="nav-link active">FAQ</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-cta">
+        <a href="tel:+15195830880" class="header-phone">
+          <span class="phone-icon">📞</span> (519) 583-0880
+        </a>
+      </div>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a> <span>&gt;</span> <span>FAQ</span>
+        </div>
+        <h1>Frequently Asked Questions</h1>
+        <p class="page-hero-subtitle">Find answers to common questions about dining at The Beach House.</p>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section">
+      <div class="container" style="max-width: 800px;">
+
+        <!-- Category Filter Buttons -->
+        <div class="faq-categories">
+          <button class="faq-cat-btn active" data-category="all" onclick="filterFAQ('all')">All</button>
+          <button class="faq-cat-btn" data-category="general" onclick="filterFAQ('general')">General</button>
+          <button class="faq-cat-btn" data-category="dining" onclick="filterFAQ('dining')">Dining</button>
+          <button class="faq-cat-btn" data-category="menu" onclick="filterFAQ('menu')">Menu</button>
+          <button class="faq-cat-btn" data-category="events" onclick="filterFAQ('events')">Events</button>
+        </div>
+
+        <!-- FAQ Items -->
+        <div class="faq-list">
+
+          <!-- GENERAL -->
+          <div class="faq-item" data-category="general">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              <h4>Where is The Beach House located?</h4>
+              <span class="faq-toggle">▼</span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>We're located at 2 Walker St, Port Dover, ON N0A 1N0, right on the waterfront of Lake Erie. <a href="https://www.google.com/maps/search/?api=1&query=2+Walker+St+Port+Dover+ON+N0A+1N0" target="_blank" rel="noopener">Get Directions →</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="general">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              <h4>What are your hours of operation?</h4>
+              <span class="faq-toggle">▼</span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Sunday through Thursday 11am to 8:30pm, Friday and Saturday 11am to 9pm. Hours may vary on holidays.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="general">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              <h4>Do you accept reservations?</h4>
+              <span class="faq-toggle">▼</span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Yes! We recommend reservations especially on weekends and holidays. Call us at <a href="tel:+15195830880">(519) 583-0880</a> or use our <a href="contact.html">contact form</a>.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="general">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              <h4>Is there parking available?</h4>
+              <span class="faq-toggle">▼</span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Yes, there is free street parking available on Walker St and nearby lots. During peak summer months, we recommend arriving early.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- DINING -->
+          <div class="faq-item" data-category="dining">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              <h4>Do you have a patio?</h4>
+              <span class="faq-toggle">▼</span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Yes! We have a beautiful waterfront patio overlooking Lake Erie. It's open seasonally, weather permitting.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="dining">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              <h4>Is the restaurant wheelchair accessible?</h4>
+              <span class="faq-toggle">▼</span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Yes, our restaurant is fully wheelchair accessible including the main dining room, washrooms, and patio.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="dining">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              <h4>Do you have a dress code?</h4>
+              <span class="faq-toggle">▼</span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>We have a casual, relaxed atmosphere. Come as you are — beach attire welcome!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="dining">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              <h4>Do you accommodate large groups?</h4>
+              <span class="faq-toggle">▼</span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Absolutely! We can accommodate groups of up to 40 guests. Please call ahead for parties of 8 or more. A 15% gratuity is added for large parties.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- MENU -->
+          <div class="faq-item" data-category="menu">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              <h4>Do you offer vegetarian or vegan options?</h4>
+              <span class="faq-toggle">▼</span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Yes, we have several vegetarian options and can accommodate vegan dietary needs. Please ask your server for details.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="menu">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              <h4>Can you accommodate food allergies?</h4>
+              <span class="faq-toggle">▼</span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Absolutely. Please inform your server of any allergies or dietary restrictions and our kitchen will do their best to accommodate you.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="menu">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              <h4>What is your price range?</h4>
+              <span class="faq-toggle">▼</span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Most entrees are in the $20–30 range per person. We also have appetizers starting at $8 and a kids menu available.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="menu">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              <h4>Do you have a kids menu?</h4>
+              <span class="faq-toggle">▼</span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Yes! Our kids menu features child-friendly favorites like chicken fingers, grilled cheese, and fish &amp; chips, all for $10 or less.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- EVENTS -->
+          <div class="faq-item" data-category="events">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              <h4>Do you host private events?</h4>
+              <span class="faq-toggle">▼</span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Yes, we offer private dining and event hosting for birthdays, anniversaries, corporate events, and more. <a href="contact.html">Contact us</a> for details.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="events">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              <h4>Do you offer catering?</h4>
+              <span class="faq-toggle">▼</span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>We offer full-service catering for events of all sizes. Call us or send a message through our <a href="contact.html">contact form</a> to discuss your needs.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Still Have Questions?</h2>
+        <p>Our team is happy to help with any questions not covered here.</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-primary">Contact Us</a>
+          <a href="tel:+15195830880" class="btn btn-secondary">Call Us</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-text">The Beach House</span>
+          </a>
+          <p>A waterfront dining experience on the shores of Lake Erie. Fresh seafood, stunning views, and unforgettable moments in Port Dover, Ontario.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Facebook">f</a>
+            <a href="#" class="social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Hours</h4>
+          <ul class="footer-links">
+            <li>Sun–Thu: 11am–8:30pm</li>
+            <li>Fri–Sat: 11am–9pm</li>
+          </ul>
+          <h4 class="footer-heading" style="margin-top:1.5rem;">Price Range</h4>
+          <ul class="footer-links">
+            <li>$20–30 per person</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Contact Us</h4>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📍</span>
+            <span>2 Walker St,<br>Port Dover, ON N0A 1N0</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📞</span>
+            <a href="tel:+15195830880">(519) 583-0880</a>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">✉️</span>
+            <a href="mailto:info@thebeachhouseportdover.ca">info@thebeachhouseportdover.ca</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 The Beach House. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
